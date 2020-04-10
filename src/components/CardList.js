@@ -1,14 +1,13 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Card from "./Card";
 
 const CardList = ({ robots }) => {
-  const cardsArray = robots.map((user) => {
+  const list = robots.map((user) => {
     return (
-      <Card key={user.id} id={user.id} name={user.name} email={user.name} />
+      <Card key={user.id} id={user.id} name={user.name} email={user.email} />
     );
   });
-
-  return <Fragment>{cardsArray}</Fragment>;
+  return <div>{list}</div>;
 };
 
 export default CardList;

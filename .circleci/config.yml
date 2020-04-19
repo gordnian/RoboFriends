@@ -28,5 +28,5 @@ workflows:
       - build
       - hiThere
       - test:
-        requires:
-          -hiThere
+          requires:
+            - hiThere

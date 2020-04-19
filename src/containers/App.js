@@ -4,6 +4,7 @@ import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
 import ErrorBoundry from "../components/ErrorBoundry";
+import Header from "../components/Header";
 import { setSearchField, requestRobots } from "../actions";
 
 const mapStateToProps = (state) => {
@@ -39,7 +40,7 @@ class App extends React.Component {
     }
     return (
       <div className="tc">
-        <h1 className="f1">RoboFriends</h1>
+        <Header />
         <SearchBox searchField={searchField} searchChange={onSearchChange} />
         <Scroll>
           <ErrorBoundry>
